@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="left-pane">
+    <img id="plants" src="./images/plants.jpg" alt="plants">
+    <div id="banner">
+      <img src="./images/odin.png" alt="odin" id="odin-image">
+      <p id="odin-name">ODIN</p>
+    </div>
+  </div>
+  <div id="right-pane">
+    <div id="top-message">
+      <p class="big-text top-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
+      <p class="big-text top-text">You <em>know</em> you want to.</p>
+    </div>
+    <div id="user-form">
+      <p class="big-text">Let's do this!</p>
+      <form action="" id="form" method="post">
+        <div class="row">
+          <div class="form-group first">
+            <label for="first">FIRST NAME</label>
+            <input type="text" id="first" name="first">
+          </div>
+          <div class="form-group">
+            <label for="last">LAST NAME</label>
+            <input type="text" id="last" name="last">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group first">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="number">PHONE NUMBER</label>
+            <input type="tel" id="number" name="number" pattern="[0-9]{3}(\s?|\-?)[0-9]{3}(\s?|\-?)[0-9]{4}">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group first bottom">
+            <label for="password1">PASSWORD</label>
+            <input type="password" id="password1" name="password1" required>
+          </div>
+          <div class="form-group bottom">
+            <label for="password2">CONFIRM PASSWORD</label>
+            <input type="password" id="password2" name="password2" required>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="auth-actions">
+      <button type="submit" id="create" form="form">Create Account</button>
+      <p id="login">Already have an account? <a id="login-link" href="">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>
